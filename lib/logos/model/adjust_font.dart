@@ -74,7 +74,7 @@ class _AdjustFontScaleState extends State<AdjustFontScale> {
             contentPadding: EdgeInsets.all( 10 ),
 
             title: Text(
-                'Text Size Adjustment = ' + LogosFontSizeController().fontSizeAdjustment.toString(),
+                '.Text Size Adjustment = ' + LogosFontSizeController().fontSizeAdjustment.toString(),
             ),
             content: SingleChildScrollView(
                 child: ListBody(
@@ -82,7 +82,6 @@ class _AdjustFontScaleState extends State<AdjustFontScale> {
 
 
                         SizedBox(
-                            //width: double.infinity,
                             width: MediaQuery.of( context ).size.width * 0.8,
                             height: MediaQuery.of(context).size.height / 3,
                             child: LogosTxt(
